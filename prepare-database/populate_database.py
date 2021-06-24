@@ -45,6 +45,7 @@ def get_people():
 
       return req.json()
     except Exception as e:
+      print(f'Error in get_people, try number {_try+1}')
       print(str(e))
 
 
@@ -82,6 +83,7 @@ def main():
 
     print('Success execution')
   except Exception as e:
+    print('Error in execution')
     print(str(e))
 
 
